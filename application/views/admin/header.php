@@ -35,7 +35,7 @@
             <header class="header fixed-top clearfix">
                 <div class="brand">
                     <a href="/admin/painel" class="logo">
-                        <img src="<?php echo base_url() ?>assets/admin/images/logo.png" alt="Sua Franqia" class="img-responsive">
+                        <!--<img src="<?php echo base_url() ?>assets/admin/images/logo.png" alt="Sua Franqia" class="img-responsive">-->
                     </a>
                     <div class="sidebar-toggle-box">
                         <div class="fa fa-bars"></div>
@@ -70,31 +70,30 @@
                     <!-- sidebar menu start-->            
                     <div class="leftside-navigation">
                         <ul class="sidebar-menu" id="nav-accordion">
-                            <?php if ($menu->acessaDashboard): ?>
+                            
                             <li>
                                 <a id="painel" href="<?php echo site_url('admin/painel') ?>" class="<?php echo ($menu_active == 'painel' ? 'active' : '') ?>">
                                     <i class="fa fa-dashboard"></i>
                                     <span>Painel</span>
                                 </a>
                             </li>
-                            <?php endif; ?>
-                            <?php if ($menu->acessaFranquias): ?>
-                            <li>
-                                <a id="franquias" href="<?php echo site_url('admin/franquias') ?>" class="<?php echo ($menu_active == 'franquias' ? 'active' : '') ?>">
-                                    <i class="ico-office"></i>
-                                    <span>Franquias</span>
-                                </a>
+                            
+                             <li>
+                              <a id="relatorios" href="<?php echo site_url('admin/arquivos_downloads') ?>"  class="<?php echo ($menu_active == 'arquivos_downloads' ? 'active' : '') ?>">
+                                <i class="ico-download"></i>
+                                <span>Arquivos para Upload</span> 
+                              </a>
                             </li>
-                            <?php endif; ?>
+                            
 
-                            <?php if ($menu->acessaClassificados): ?>
+                            <?php /*if ($menu->acessaClassificados):  ?>
                             <li>
                                 <a id="classificados" href="<?php echo site_url('admin/classificados') ?>" class="<?php echo ($menu_active == 'classificados' ? 'active' : '') ?>">
                                     <i class="fa fa-newspaper-o"></i>
                                     <span>Classificados</span>
                                 </a>
                             </li>
-                            <?php endif; ?>
+                            <?php endif; */?>
 
                         </ul>
                     </div>        

@@ -7,11 +7,12 @@
             <span class="input-group-addon">
                 <i class="fa fa-calendar"></i>
             </span>
-            <input type="hidden" name="IDFranquia" value="<?php echo $this->uri->segment(4) ?>" />
+           <!--  <input type="hidden" name="IDFranquia" value="<?php echo $this->uri->segment(4) ?>" />
             <input type="hidden" name="de" value="<?php echo isset($where['de'])? date('d-m-Y', strtotime($where['de'])) : date('d-m-Y', strtotime('-1 month')) ?>" />
-            <input type="hidden" name="ate" value="<?php echo isset($where['ate'])? date('d-m-Y', strtotime($where['ate'])) :date('d-m-Y') ?>" />
+            <input type="hidden" name="ate" value="<?php echo isset($where['ate'])? date('d-m-Y', strtotime($where['ate'])) :date('d-m-Y') ?>" /> -->
         </div>
     </div>
+    <?php /* ?>
     <div class="pull-right col-sm-8">
         <div class="col-sm-4">
             <span class="mini-stat-icon pink"><i class="ico-users"></i></span>
@@ -38,7 +39,7 @@
     <h2>Sua Franquia</h2>
     <?php /*<small class="mute">Dados do dia <?php echo date('d/m/Y', strtotime('-30 days')) ?> até hoje</small> */ ?>
 </header>
-
+<?php /* ?>
 <div class="panel">
     <div class="panel-heading"><i class="fa fa-pie-chart"></i> Acessos por conteúdos</div>
     <div class="panel-body">
@@ -210,6 +211,6 @@
         </div>
     </div>
 </div>
-
+<?php */ ?>
 
 <?php include_once(dirname(__FILE__) . '/footer.php'); ?>

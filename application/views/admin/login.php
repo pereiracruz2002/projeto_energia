@@ -31,7 +31,7 @@
     <body class="login-body">
         <div class="container"> 
             <form class="form-signin" action="/admin/login" method="post">
-                <h2 class="form-signin-heading"><img src="<?php echo base_url() ?>assets/admin/images/logo.png" class="img-responsive" /></h2> 
+                <h2 class="form-signin-heading"><!--<img src="<?php echo base_url() ?>assets/admin/images/logo.png" class="img-responsive" />--></h2> 
                 <div class="login-wrap">
                     <div class="user-login-info">
                         <input type="text" class="form-control" name="login" placeholder="Login" required autofocus="" />
